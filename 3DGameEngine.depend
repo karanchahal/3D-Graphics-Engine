@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1449268357 source:c:\users\user\documents\new folder\3dgameengine\main.cpp
+	"basicfunctions.h"
+
+1449268419 c:\users\user\documents\new folder\3dgameengine\basicfunctions.h
+	"plot.h"
+	"line.h"
+	"circle.h"
+	"ellipse.h"
+
+1449266668 c:\users\user\documents\new folder\3dgameengine\line.h
+	"plot.h"
+
+1449265879 c:\users\user\documents\new folder\3dgameengine\plot.h
+	<iostream>
+	<graphics.h>
+
+1449262627 c:\users\user\documents\new folder\3dgameengine\circle.h
+	"plot.h"
+
+1449268403 c:\users\user\documents\new folder\3dgameengine\ellipse.h
+
