@@ -5,6 +5,8 @@
 #include "circle.h"
 #include "ellipse.h"
 #include "polygon.h"
+#include "matrix.h"
+
 
 
 class Game{

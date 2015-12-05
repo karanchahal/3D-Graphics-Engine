@@ -32,12 +32,14 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="basicfunctions.h" />
 		<Unit filename="circle.h" />
 		<Unit filename="ellipse.h" />
+		<Unit filename="game.h" />
 		<Unit filename="line.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="matrix.h" />
 		<Unit filename="plot.h" />
+		<Unit filename="polygon.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

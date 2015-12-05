@@ -2,31 +2,25 @@
 
 int main()
 {
-    Game* game =new Game();
-    //game->ellipse(100,50,200,200,CYAN);*/
-    //game->line(200,100,500,300,RED);
-    //game->circle(300,300,50,GREEN);
 
-    vector<Point> rectange_points;
+    Game g;
+    Matrix* m = new Matrix(3);
+    int a1[20] = {1,0,0};
+    int a2[20] = {0,1,0};
+    int a3[20] = {0,0,1};
+    int b1[20] ={1,2,4};
+    int b2[20] = {2,1,3};
+    int b3[20] = {1,1,1};
+    vector< vector<int> > A = m->init(a1,a2,a3,3,3);
+    vector< vector<int> > B = m->init(b1,b2,b3,3,3);
 
-    Point temp_point;
-    temp_point.x = 100;
-    temp_point.y = 100;
-    rectange_points.push_back(temp_point);
-    temp_point.x = 200;
-    temp_point.y = 100;
-    rectange_points.push_back(temp_point);
-    temp_point.x = 200;
-    temp_point.y = 200;
-    rectange_points.push_back(temp_point);
-    temp_point.x = 100;
-    temp_point.y = 200;
-    rectange_points.push_back(temp_point);
+    m->multiply(A,B);
+    m->display();
 
 
-    Polygons rectange(rectange_points,GREEN);
-    rectange.display();
+
+
     getch();
-    delete game;
+    delete m;
     return 0;
 }
