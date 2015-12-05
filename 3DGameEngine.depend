@@ -20,8 +20,8 @@
 
 1449268403 c:\users\user\documents\new folder\3dgameengine\ellipse.h
 
-1449286754 source:c:\users\user\desktop\3dgameengine\main.cpp
-	"basicfunctions.h"
+1449290436 source:c:\users\user\desktop\3dgameengine\main.cpp
+	"game.h"
 
 1449276251 c:\users\user\desktop\3dgameengine\basicfunctions.h
 	"plot.h"
@@ -29,16 +29,27 @@
 	"circle.h"
 	"ellipse.h"
 
-1449265879 c:\users\user\desktop\3dgameengine\plot.h
+1449288944 c:\users\user\desktop\3dgameengine\plot.h
 	<iostream>
 	<graphics.h>
+	<vector>
 
-1449266668 c:\users\user\desktop\3dgameengine\line.h
+1449290790 c:\users\user\desktop\3dgameengine\line.h
 	"plot.h"
 
 1449262627 c:\users\user\desktop\3dgameengine\circle.h
 	"plot.h"
 
 1449286845 c:\users\user\desktop\3dgameengine\ellipse.h
+	"plot.h"
+
+1449289396 c:\users\user\desktop\3dgameengine\game.h
+	"plot.h"
+	"line.h"
+	"circle.h"
+	"ellipse.h"
+	"polygon.h"
+
+1449291166 c:\users\user\desktop\3dgameengine\polygon.h
 	"plot.h"
 
