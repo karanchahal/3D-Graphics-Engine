@@ -17,7 +17,7 @@ public:
     void line(int x1,int y1,int x2,int y2,int COLOR)
     {
         Line line(x1,y1,x2,y2,COLOR);
-        delete line;
+
     }
 
     void circle(int xCenter,int yCenter,int radius,int COLOR)
@@ -31,13 +31,6 @@ public:
        Elipse e(a,b,xCenter,yCenter,COLOR);
 
     }
-
-
-
-
-
-
-
 
 
     ~Game()
