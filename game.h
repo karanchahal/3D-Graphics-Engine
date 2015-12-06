@@ -6,6 +6,7 @@
 #include "ellipse.h"
 #include "polygon.h"
 #include "matrix.h"
+#include "curves.h"
 
 
 

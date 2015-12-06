@@ -57,3 +57,34 @@
 1449350284 c:\users\user\desktop\3dgameengine\matrix.h
 	"plot.h"
 
+1449357302 source:c:\users\user\desktop\3d-graphics-engine\main.cpp
+	"game.h"
+
+1449357302 c:\users\user\desktop\3d-graphics-engine\game.h
+	"plot.h"
+	"line.h"
+	"circle.h"
+	"ellipse.h"
+	"polygon.h"
+	"matrix.h"
+
+1449357302 c:\users\user\desktop\3d-graphics-engine\plot.h
+	<iostream>
+	<graphics.h>
+	<vector>
+
+1449357302 c:\users\user\desktop\3d-graphics-engine\line.h
+	"plot.h"
+
+1449357302 c:\users\user\desktop\3d-graphics-engine\circle.h
+	"plot.h"
+
+1449357302 c:\users\user\desktop\3d-graphics-engine\ellipse.h
+	"plot.h"
+
+1449357302 c:\users\user\desktop\3d-graphics-engine\polygon.h
+	"plot.h"
+
+1449357302 c:\users\user\desktop\3d-graphics-engine\matrix.h
+	"plot.h"
+
