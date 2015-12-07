@@ -8,6 +8,7 @@
 #include "matrix.h"
 #include "curves.h"
 #include "colour.h"
+#include "transformation.h"
 
 
 

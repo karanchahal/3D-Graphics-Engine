@@ -3,18 +3,17 @@
 
 class Matrix{
 
-private:
-    vector< vector<int> > result;
-
 public:
-    Matrix(int height)
+    vector<vector<double> > result;
+
+    Matrix(double height)
     {
         result.resize(height);
     }
 
-    vector<vector<int> > init(int a1[20],int a2[20],int a3[20],int height,int width)
+    vector<vector<double> > init(double a1[20],double a2[20],double a3[20],double height,double width)
     {
-        vector< vector<int> > A(height);
+        vector< vector<double> > A(height);
 
         for(int i=0;i<width;i++)
         {
@@ -26,7 +25,7 @@ public:
         return A;
     }
 
-    vector<vector<int> > multiply(vector< vector<int> > A,vector< vector<int> > B)
+    vector<vector<double> > multiply(vector< vector<double> > A,vector< vector<double> > B)
     {
 
         if(A[0].size() != B.size())
@@ -35,15 +34,16 @@ public:
         }
 
 
-        for(int i=0;i<A.size();i++)
+        for(double i=0;i<A.size();i++)
         {
-            for(int j=0;j<B[0].size();j++)
+            for(double j=0;j<B[0].size();j++)
             {
-                int sum =0;
-                for(int k=0;k<A[0].size();k++)
+                double sum =0;
+                for(double k=0;k<A[0].size();k++)
                 {
                     sum += A[i][k]*B[k][j];
                 }
+
                 result[i].push_back(sum);
             }
         }
@@ -63,7 +63,17 @@ public:
         }
     }
 
-
+    void display_matrix(vector<vector<double> > M)
+    {
+         for(int i=0;i<M.size();i++)
+        {
+            for(int j=0;j<M[0].size();j++)
+            {
+                cout<<M[i][j]<<" ";
+            }
+            cout<<endl;
+        }
+    }
 
 
 };

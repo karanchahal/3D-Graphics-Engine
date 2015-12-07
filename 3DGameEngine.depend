@@ -1,8 +1,8 @@
 # depslib dependency file v1.0
-1449514737 source:c:\users\lenovo\desktop\3d-graphics-engine\main.cpp
+1449532270 source:c:\users\lenovo\desktop\3d-graphics-engine\main.cpp
 	"game.h"
 
-1449514794 c:\users\lenovo\desktop\3d-graphics-engine\game.h
+1449524696 c:\users\lenovo\desktop\3d-graphics-engine\game.h
 	"plot.h"
 	"line.h"
 	"circle.h"
@@ -11,6 +11,7 @@
 	"matrix.h"
 	"curves.h"
 	"colour.h"
+	"transformation.h"
 
 1449513767 c:\users\lenovo\desktop\3d-graphics-engine\plot.h
 	<iostream>
@@ -30,11 +31,14 @@
 1449514875 c:\users\lenovo\desktop\3d-graphics-engine\polygon.h
 	"plot.h"
 
-1449502454 c:\users\lenovo\desktop\3d-graphics-engine\matrix.h
+1449525846 c:\users\lenovo\desktop\3d-graphics-engine\matrix.h
 	"plot.h"
 
 1449512368 c:\users\lenovo\desktop\3d-graphics-engine\curves.h
 	"plot.h"
 
 1449515172 c:\users\lenovo\desktop\3d-graphics-engine\colour.h
+
+1449532384 c:\users\lenovo\desktop\3d-graphics-engine\transformation.h
+	"plot.h"
 
