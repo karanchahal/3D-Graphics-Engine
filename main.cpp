@@ -8,25 +8,25 @@ int main()
     a.x = 100;
     a.y = 100;
 
-    Point a_t;
-    a.x = 50;
-    a.y = 10;
-
     Point b;
-    a.x = 100;
-    a.y = 200;
+    b.x = 0;
+    b.y = 0;
 
-    Point b_t;
-    a.x = 100;
-    a.y = 50;
+    Point c;
+    c.x = 150;
+    c.y = 100;
 
-    Curves c;
-    c.drawHermiCurve(a,a_t,b,b_t,RED);
+    Point d;
+    d.x = 0;
+    d.y = 0;
+
+    Curves curve;
+    curve.drawHermiCurve(a,b,c,d,RED);
 
 
 
 
     getch();
-    delete m;
+
     return 0;
 }

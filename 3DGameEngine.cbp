@@ -33,6 +33,7 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="circle.h" />
+		<Unit filename="curves.h" />
 		<Unit filename="ellipse.h" />
 		<Unit filename="game.h" />
 		<Unit filename="line.h" />

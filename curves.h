@@ -1,4 +1,4 @@
-#pragman once
+#pragma once
 #include "plot.h"
 
 class Curves
@@ -38,7 +38,7 @@ public:
 
     void drawHermiCurve(Point a1,Point at1,Point a2,Point at2,double COLOR)
     {
-        double prevx,prevy;
+        double prevx = -1,prevy = -1;
         double x,y;
 
         for(double t =0;t <=1 ; t+=0.001)
@@ -60,9 +60,25 @@ public:
 
     }
 
-    void drawBezierCurve(double)
+    void drawBezierCurve (Point a1,Point a2,Point a3,Point a4,int COLOR)
     {
 
+        double t;
+        for (t = 0.0; t < 1.0; t += 0.001)
+        {
+        double xt = pow (1-t, 3) * a1.x + 3 * t * pow (1-t, 2) * a2.x +
+                3 * pow (t, 2) * (1-t) * a3.x + pow (t, 3) * a4.x;
+
+        double yt = pow (1-t, 3) * a1.y + 3 * t * pow (1-t, 2) * a2.y +
+                3 * pow (t, 2) * (1-t) * a3.y + pow (t, 3) * a4.y;
+
+        plot(xt, yt, WHITE);
+        }
+
+
+
+
     }
+
 
 };
