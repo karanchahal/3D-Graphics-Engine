@@ -7,6 +7,7 @@
 #include "polygon.h"
 #include "matrix.h"
 #include "curves.h"
+#include "colour.h"
 
 
 

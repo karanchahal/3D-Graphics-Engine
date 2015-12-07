@@ -11,8 +11,13 @@ struct Point
     int x,y;
 };
 
-void plot(int x1,int y1,int COLOR)
+void plot(int x,int y,int COLOR)
 {
-    putpixel(x1,y1,COLOR);
+    putpixel(x,y,COLOR);
+}
+
+int getPixelColour(int x,int y)
+{
+    return getpixel(x,y);
 }
 

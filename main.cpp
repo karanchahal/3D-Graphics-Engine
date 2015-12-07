@@ -3,25 +3,40 @@
 int main()
 {
 
+
+
     Game g;
-    Point a;
-    a.x = 100;
-    a.y = 100;
 
-    Point b;
-    b.x = 0;
-    b.y = 0;
+    vector<Point> points;
+    Point point;
+    point.x = 100;
+    point.y = 100;
 
-    Point c;
-    c.x = 150;
-    c.y = 100;
+    points.push_back(point);
 
-    Point d;
-    d.x = 0;
-    d.y = 0;
+    point.x = 100;
+    point.y = 200;
 
-    Curves curve;
-    curve.drawHermiCurve(a,b,c,d,RED);
+    points.push_back(point);
+
+    point.x = 200;
+    point.y = 200;
+
+    points.push_back(point);
+
+    point.x = 200;
+    point.y = 100;
+
+    points.push_back(point);
+    Polygons rectangle(points,RED);
+    rectangle.display();
+
+    Color colorthis(rectangle,RED,0);
+
+
+
+
+
 
 
 

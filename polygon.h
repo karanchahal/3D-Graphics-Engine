@@ -4,11 +4,11 @@
 
 class Polygons
 {
-private:
+public:
     vector<Point> points;
     int COLOR;
 
-public:
+
     Polygons(vector<Point> points,int COLOR)
     {
         this->points = points;
