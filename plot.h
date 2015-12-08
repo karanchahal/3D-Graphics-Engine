@@ -4,6 +4,8 @@
 #include<vector>
 #include<math.h>
 
+#define Pi 3.14
+
 using namespace std;
 
 struct Point

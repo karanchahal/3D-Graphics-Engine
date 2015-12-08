@@ -92,7 +92,7 @@ public:
 
     }
 
-    Polygons scale(Polygons polygon ,int x,int y,int z,int COLOR)
+    Polygons scale(Polygons polygon ,double x,double y,double z,double COLOR)
     {
         vector< vector<double> > points_before;
 
@@ -112,9 +112,31 @@ public:
         return transformed_polygon;
     }
 
-    void rotate()
+    Polygons rotate(Polygons polygon,double angle,double COLOR)
     {
+        vector< vector<double> > points_before;
+        angle = angle*(Pi/180);
 
+        rotateMatrix[0][0] = cos(angle);
+        rotateMatrix[0][1] = sin(angle);
+        rotateMatrix[1][0] = -sin(angle);
+        rotateMatrix[1][1] = cos(angle);
+        rotateMatrix[2][2] = 0;
+
+
+
+        points_before = initTransformMatrix(polygon.points);
+
+        Matrix m(4);
+
+        m.display_matrix(rotateMatrix);
+
+        m.multiply(rotateMatrix,points_before);
+        vector<Point> final_points = initPointMatrix(m.result);
+
+        Polygons transformed_polygon(final_points,COLOR);
+
+        return transformed_polygon;
     }
 
 

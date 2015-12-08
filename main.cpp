@@ -17,6 +17,8 @@ int main()
     double b3[20] = {0,0,1};
     Matrix m(3);
 
+    double hey = 3.14;
+
     vector<vector<double> > A = m.init(a1,a2,a3,3,3);
     vector<vector<double> > B = m.init(b1,b2,b3,3,3);
 
@@ -51,7 +53,7 @@ int main()
 
     Transform t;
 
-    rectangle = t.scale(rectangle,2,2,2,GREEN);
+    rectangle = t.rotate(rectangle,30,GREEN);
     rectangle.display();
 
 
