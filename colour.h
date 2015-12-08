@@ -6,6 +6,33 @@ class Color
 
  public:
 
+    void seedfillforpolygons(Point point,int COLOR,int CORNER_COLOR)
+    {
+        Point temp;
+
+        if(COLOR != getPixelColour(point.x,point.y) && CORNER_COLOR != getPixelColour(point.x,point.y))
+        {
+            plot(point.x,point.y,COLOR);
+            temp.x = point.x +1;
+            temp.y = point.y;
+            seedfillforpolygons(temp,COLOR,CORNER_COLOR);
+
+            temp.x = point.x;
+            temp.y = point.y + 1;
+            seedfillforpolygons(temp,COLOR,CORNER_COLOR);
+
+            temp.x = point.x - 1;
+            temp.y = point.y;
+            seedfillforpolygons(temp,COLOR,CORNER_COLOR);
+
+            temp.x = point.x;
+            temp.y = point.y - 1;
+            seedfillforpolygons(temp,COLOR,CORNER_COLOR);
+
+        }
+        return;
+    }
+
     void seedfill(Point point,int COLOR)
     {
         Point temp;
@@ -38,6 +65,10 @@ class Color
 
     }
 
+    Color()
+    {
+        //nothing
+    }
 
     Color(Polygons polygon,int COLOR,int flag)
     {

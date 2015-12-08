@@ -1,10 +1,10 @@
 # depslib dependency file v1.0
-1449540893 source:c:\users\lenovo\desktop\3d-graphics-engine\main.cpp
+1449583280 source:c:\users\lenovo\desktop\3d-graphics-engine\main.cpp
 	"game.h"
 	<conio.h>
 	<stdlib.h>
 
-1449524696 c:\users\lenovo\desktop\3d-graphics-engine\game.h
+1449576836 c:\users\lenovo\desktop\3d-graphics-engine\game.h
 	"plot.h"
 	"line.h"
 	"circle.h"
@@ -14,14 +14,16 @@
 	"curves.h"
 	"colour.h"
 	"transformation.h"
+	"3D-Object.h"
+	"cuboid.h"
 
-1449540483 c:\users\lenovo\desktop\3d-graphics-engine\plot.h
+1449577169 c:\users\lenovo\desktop\3d-graphics-engine\plot.h
 	<iostream>
 	<graphics.h>
 	<vector>
 	<math.h>
 
-1449502454 c:\users\lenovo\desktop\3d-graphics-engine\line.h
+1449582607 c:\users\lenovo\desktop\3d-graphics-engine\line.h
 	"plot.h"
 
 1449502454 c:\users\lenovo\desktop\3d-graphics-engine\circle.h
@@ -39,8 +41,16 @@
 1449512368 c:\users\lenovo\desktop\3d-graphics-engine\curves.h
 	"plot.h"
 
-1449515172 c:\users\lenovo\desktop\3d-graphics-engine\colour.h
+1449577504 c:\users\lenovo\desktop\3d-graphics-engine\colour.h
 
 1449540910 c:\users\lenovo\desktop\3d-graphics-engine\transformation.h
 	"plot.h"
+
+1449583326 c:\users\lenovo\desktop\3d-graphics-engine\3d-object.h
+	<bits/stdc++.h>
+	<graphics.h>
+
+1449582792 c:\users\lenovo\desktop\3d-graphics-engine\cuboid.h
+	<bits/stdc++.h>
+	<graphics.h>
 

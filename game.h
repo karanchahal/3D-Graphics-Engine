@@ -9,6 +9,8 @@
 #include "curves.h"
 #include "colour.h"
 #include "transformation.h"
+#include "3D-Object.h"
+#include "cuboid.h"
 
 
 

@@ -32,7 +32,10 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="3D-Object.h" />
 		<Unit filename="circle.h" />
+		<Unit filename="colour.h" />
+		<Unit filename="cuboid.h" />
 		<Unit filename="curves.h" />
 		<Unit filename="ellipse.h" />
 		<Unit filename="game.h" />
@@ -41,6 +44,7 @@
 		<Unit filename="matrix.h" />
 		<Unit filename="plot.h" />
 		<Unit filename="polygon.h" />
+		<Unit filename="transformation.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
