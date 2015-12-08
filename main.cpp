@@ -1,5 +1,6 @@
 #include "game.h"
-
+#include<conio.h>
+#include <stdlib.h>
 int main()
 {
 
@@ -44,16 +45,14 @@ int main()
 
     points.push_back(point);
     Polygons rectangle(points,RED);
+
     rectangle.display();
 
-    Color colorthis(rectangle,RED,0);
 
     Transform t;
 
-    rectangle = t.translate(rectangle,10,10,0,GREEN);
-
-    Color colorthistoo(rectangle,GREEN,0);
-
+    rectangle = t.scale(rectangle,2,2,2,GREEN);
+    rectangle.display();
 
 
 

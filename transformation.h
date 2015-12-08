@@ -67,6 +67,8 @@ public:
         init(rotateMatrix);
     }
 
+
+
     Polygons translate(Polygons polygon ,int x,int y,int z,int COLOR)
     {
         vector< vector<double> > points_before;
@@ -84,15 +86,30 @@ public:
 
         Polygons transformed_polygon(final_points,COLOR);
 
-        transformed_polygon.display();
+
         return transformed_polygon;
 
 
     }
 
-    void scale()
+    Polygons scale(Polygons polygon ,int x,int y,int z,int COLOR)
     {
+        vector< vector<double> > points_before;
 
+        scaleMatrix[0][0] = x;
+        scaleMatrix[1][1] = y;
+        scaleMatrix[3][3] = z;
+
+        points_before = initTransformMatrix(polygon.points);
+
+        Matrix m(4);
+
+        m.multiply(scaleMatrix,points_before);
+        vector<Point> final_points = initPointMatrix(m.result);
+
+        Polygons transformed_polygon(final_points,COLOR);
+
+        return transformed_polygon;
     }
 
     void rotate()
